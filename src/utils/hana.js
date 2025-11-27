@@ -65,6 +65,7 @@ export const convertHana = async (file) => {
         const rowItem = newRow['아이템(괄호)'];
         if (rowItem) {
             if (rowItem.startsWith('쿠팡 ')) {
+                newRow['아이템(괄호)'] = '쿠페이머니 충전';
                 newRow['왼쪽'] = '쿠페이';
             } else if (rowItem === '쿠쿠렌탈료') {
                 newRow['왼쪽'] = '주거,통신';
