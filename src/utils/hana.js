@@ -42,7 +42,7 @@ export const convertHana = async (file) => {
         const deposit = parseFloat((rowData['입금액'] || '0').toString().replace(/,/g, ''));
         const amount = withdrawal > 0 ? withdrawal : deposit;
 
-        const accountAlias = '하나은행';
+        const accountAlias = '월급통장(하나은행)';
         let left = '';
         let right = '';
 
